@@ -9,9 +9,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "date-fns": "^2.30.0",
+    "keen-slider": "^6.8.5",
     "next": "^13.2.1",
+    "next-share": "^0.20.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-player": "^2.12.0",
     "zod": "^3.20.6"
   },
   "devDependencies": {

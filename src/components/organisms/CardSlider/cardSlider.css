@@ -1,0 +1,90 @@
+.swiperPropertyFeatured {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.swiperPropertyFeatured .main-featured-propertie {
+  margin-bottom: 60px;
+}
+
+.FeaturedPropertyCarousel {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    margin: 10px auto 10px auto; 
+    padding: 5px 5px 5px;
+}
+.FeaturedPropertiesTitleCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-top: 45px;
+}
+
+.FeaturedPropertiesTitleCont p {
+  width: 90%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 20px;
+  margin-bottom: 0px;
+  color: var(--sixth-color);
+}
+
+@media (min-width: 576px) {
+.swiperPropertyFeatured {
+    width: 70% !important;
+}
+.FeaturedPropertiesTitleCont {
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+  .FeaturedPropertiesTitleCont p {
+    font-size: 24px;
+    line-height: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .swiperPropertyFeatured {
+    width: 95% !important;
+  }
+}
+
+@media (min-width: 900px) {
+  .FeaturedPropertiesTitleCont {
+    margin-bottom: 0px;
+    margin-top: 50px;
+  }
+  .swiperPropertyFeatured {
+    width: 100% !important;
+  }
+
+  .FeaturedPropertiesTitleCont p {
+    width: 100%;
+    line-height: 43.65px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .FeaturedPropertiesTitleCont {
+        margin-bottom: 20px;
+        margin-inline: auto;
+        width: 85%;
+    }
+    .FeaturedPropertiesTitleCont p {
+        text-align: start;
+        font-size: 32px;
+    }
+}
+
+
+.swiperPropertyFeatured .swiper-button-next:after,
+.swiperPropertyFeatured .swiper-button-prev:after {
+    font-size: 50px !important;
+    color: #FF5614;
+    font-weight: bold;
+}

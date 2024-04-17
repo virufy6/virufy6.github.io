@@ -1,16 +1,10 @@
-import LocaleSelector from "~/components/LocaleSelector";
-import { useI18n } from "~/i18n";
+import Home from "./home"
 
-export default function Home() {
-  const {
-    home: { title, subtitle },
-  } = useI18n();
+export default function index() {
 
   return (
     <>
-      <LocaleSelector />
-      <h1>{title} </h1>
-      <p>{subtitle}</p>
+    <Home/>
     </>
   );
 }

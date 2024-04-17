@@ -1,17 +1,21 @@
 import { type AppProps } from "next/app";
 import "~/styles/globals.css";
+import Navbar from "~/components/organisms/Navbar/Navbar";
+import Footer from "~/components/organisms/Footer/Footer";
 
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
-const inter = Inter({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-montserrat",
 });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={`${inter.variable} font-sans`}>
-      <Component {...pageProps} />
+    <main className={`${montserrat.variable} font-sans`}>
+      <Navbar />
+          <Component {...pageProps} />
+      <Footer />
     </main>
   );
 }
