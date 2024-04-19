@@ -10,7 +10,7 @@ export default function TextinsImg({
 }) {
   return (
     <div className="over overflow-hidden relative  flex justify-center">
-      <div className=" contrast-50 brightness-50">
+      <div className=" contrast-100 brightness-50">
         <ImageAtomLocal
         ImageStyleProps=""
           imagesize={sizeImg}

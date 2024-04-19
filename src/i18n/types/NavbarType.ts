@@ -1,4 +1,5 @@
 export interface NavbarType {
+    home: string
     ourTechnology: OurTechnology
     getInvolved: GetInvolved
     aboutUs: AboutUs

@@ -51,7 +51,7 @@ export default function Navbar() {
 
     return (
 
-        <nav className="w-full bg-white shadow sticky z-[100]" >
+        <nav className="w-full bg-transparent shadow sticky z-[100]" >
             <div>
                 {showModal ? (
                     <>
@@ -145,6 +145,11 @@ export default function Navbar() {
                             }`}
                     >
                         <ul className="items-center justify-center space-y-8 lg:flex lg:space-x-5 xl:space-x-9 lg:space-y-0">
+                            <li className="text-[#393939]">
+                                <div>
+
+                                </div>
+                            </li>
                             <li className="text-[#393939]">
                                 <div>
                                     <Link className="peer py-2 text-[#393939]" href="/OurTechnology">{ourTechnology?.section}</Link>
