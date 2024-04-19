@@ -1,6 +1,7 @@
 import { NavbarType } from '../types/NavbarType'
 
 export const navbar: NavbarType = {
+  home: 'Home',
   ourTechnology: {
     section: 'Nuestra Tecnología',
     howItWorks: 'Cómo Funciona',
