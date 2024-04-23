@@ -59,7 +59,7 @@ export default function OurPeople2() {
               ImageStyleProps={""}
             />
           </div>
-          <div className="flex-col flex-1 text-xl mr-[6vw] text-white
+          <div className="flex-col flex-1 text-xl mr-[12vw] text-white
           ">
             <Text
               Style=""
@@ -80,15 +80,14 @@ export default function OurPeople2() {
             />
           </div>
         </div>
-        <div className="ml-[5vw] mt-[80px] flex flex-wrap flex-row items-start
+        <div className="ml-[4vw] mt-[20px] flex flex-wrap flex-row items-start
           sm:flex-col sm:items-center
           md:flex-row md:items-end
           lg:flex-row lg:items-end
           xl:flex-row xl:items-end
         ">
-
           <div
-            className="mt-30"
+            className="mt-10"
           >
             <ImageAtomLocal
               imagesize={"px600"}
@@ -99,9 +98,9 @@ export default function OurPeople2() {
             />
           </div>
           <div className="flex-col flex-1
-            ml-2 mr-[5vw] text-xl text-white
+            ml-2 mr-[6vw] text-xl text-white
           ">
-            <div className="m-6">
+            <div className="m-20">
               <Text
                 Style=""
                 Text={sectionAmil.textAmil[3]}
@@ -148,7 +147,7 @@ export default function OurPeople2() {
               ImageStyleProps={""}
             />
             <div className="flex-col flex-1
-            ml-2 mr-[5vw] text-xl text-white
+            ml-2 mr-[6vw] text-xl text-white
             ">
               <div className="m-6">
                 <Text
@@ -174,12 +173,13 @@ export default function OurPeople2() {
               Text={sectionAmil.titlePublications}
               TitleClassProps="text-justify mb-[60px]"
             />
-            {sectionAmil.listPublications.map((publication) => {
+            {sectionAmil.listPublications.map((publication, idx) => {
               return (
                 <Text
                   Style="normalCardHome"
                   Text={publication}
                   TextClassProps="mt-[20px]"
+                  key={idx}
                 />
               )
             })}
