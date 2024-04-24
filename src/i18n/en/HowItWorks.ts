@@ -1,18 +1,18 @@
 export const howItWorks = {
   sectionShareCougt: {
-    title: "Share your cough",
+    title: "Science behind Virufy",
     textLabel:
-      "Your cough helps us improve our predictive model, thus being crucial in the fight against COVID-19. Contribute to the progress we are making by sharing your cough!",
-    buttons: ["SHARE YOUR COUGH", "LEARN MORE"]
+      "Artificial Intelligence (AI) is capable of detecting minute differences in vocal pattern to detect disease presence.",
+    buttons: ["See our Research", "LEARN MORE"]
   },
   sectiontCovidTestExplanation : {
-    title: "How our online Covid-19 test works",
-    titleLabelRecording: "Recording your cough",
-    titleLabelProcessing: "Processing",
-    titleLabelResults: "Results",
-    textLabelRecording: "Your cough helps us improve our predictive model, thus being crucial in the fight against COVID-19. Contribute to the progress we are making by sharing your cough!",
-    textLabelProcessing: "Our artificial intelligence algorithm processing the recording to detect Covid-19 based on cough sounds. ",
-    textLabelResults: "Within minutes, our Artificial intelligence algorithm is able to accurately predict your test results through the app.",
+    title: "How does AI work?",
+    titleLabelRecording: "01",
+    titleLabelProcessing: "02",
+    titleLabelResults: "",
+    textLabelRecording: "Our revolutionary CoughCheck app employs cutting-edge AI technology. By Simply coughing into your phone, our app captures and analyzes distinct cough patterns using sophisticated machine learning algorithms and neural networks.",
+    textLabelProcessing: "It scrutinizes various elements of the cough, such as duration, frequency, and intensity. Leveraging a comprehensive database, the Al meticulously compares recorded cough patterns against known indicators of respiratory diseases, allowing for the early detection of potential health issues.",
+    textLabelResults: "",
     button: 'comparte tu tos'
   }
 };

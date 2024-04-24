@@ -31,7 +31,7 @@ import Card21 from "~/assets/static/images/ourPeople/card21.jpg"
 import Card22 from "~/assets/static/images/ourPeople/card22.jpg"
 import Card23 from "~/assets/static/images/ourPeople/card23.jpg"
 import ImageAmil from "~/assets/static/images/ourPeople/Amil.png"
-import ImageinsText from "~/assets/static/images/textInImage/Splash.jpg"
+import ImageinsText from "~/assets/static/images/textInImage/OurPeople.jpg"
 import Section4 from "~/components/organisms/section-4/Section4"
 
 export default function OurPeople1() {

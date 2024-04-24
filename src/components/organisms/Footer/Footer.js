@@ -25,8 +25,6 @@ export default function Footer() {
 
   const links5 = [{ label: 'Do Not Sell My Personal Information', route: '#' }]
 
-  const links6 = [{ label: 'Code of Conduct', route: '#' }]
-
   const [showModalCookiesSetting, setShowModalCookiesSetting] = useState(false)
 
   const [showModalCookiesPolicy, setShowModalCookiesPolicy] = useState(false)
@@ -35,7 +33,6 @@ export default function Footer() {
 
   const [showModalPrivacyPolicy, setShowModalPrivacyPolicy] = useState(false)
 
-  const [showModalCodeOfConduct, setShowModalCodeOfConduct] = useState(false)
   const privacyDetails = [
     {
       title: 'Lorem Ipsum',
@@ -449,61 +446,6 @@ export default function Footer() {
           </>
         ) : null}
       </div>
-      <div>
-        {showModalCodeOfConduct ? (
-          <>
-            <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
-              <div className="relative mx-auto h-[500px] w-[300px] md:w-[500px] lg:w-[1000px]">
-                {/*content*/}
-                <div className="relative flex w-full flex-col rounded-xl border-0 bg-white shadow-lg outline-none focus:outline-none">
-                  {/*header*/}
-                  <div className="flex w-full rounded-t border-b border-solid border-slate-200">
-                    <Title
-                      H="h5Modals"
-                      Text="Code of Conduct "
-                      TitleClassProps={
-                        'mt-[80px] text-center md:mt-[30px] md:mx-auto mb-[30px]'
-                      }
-                    />
-                    <div className="absolute flex w-full flex-col items-end p-6">
-                      <button
-                        className="flex h-[35px] w-[35px] justify-center rounded-full bg-gray-300 px-1 py-2 font-bold text-black shadow-xl outline-none transition-all duration-150 ease-linear hover:bg-gray-400"
-                        type="button"
-                        onClick={() => setShowModalCodeOfConduct(false)}
-                      >
-                        X
-                      </button>
-                    </div>
-                  </div>
-                  {/*body*/}
-
-                  <div className="flex w-full items-center justify-center">
-                    <div className="w-full px-0">
-                      {privacyDetails.map((detail, index) => (
-                        <div key={index}>
-                          <details className="mb-3 w-full cursor-pointer bg-white">
-                            <summary className="text-dark mt-3 flex justify-between bg-white px-4 py-3 font-bold after:content-['+']">
-                              {detail.title}
-                            </summary>
-                            <hr className="border-1 mt-3 border-gray-400" />
-                            <p className="mt-3 px-4 py-3">{detail.content}</p>
-                          </details>
-                          {index < privacyDetails.length - 1 && (
-                            <hr className="border-1 border-gray-400" />
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  {/*footer*/}
-                </div>
-              </div>
-            </div>
-            <div className="fixed inset-0 z-40 bg-black opacity-25"></div>
-          </>
-        ) : null}
-      </div>
-
       {/* _____________________ */}
 
       <div>
@@ -874,9 +816,6 @@ export default function Footer() {
                 <LinkAtom Routes={links5} Style="linkFooter" />
               </div>
             </li>
-            <li className="my-1 flex w-full items-center justify-center underline">
-              <LinkAtom Routes={links6} Style="linkFooter" />
-            </li>
           </ul>
           <ul className="mb-6 hidden flex-wrap text-[#393939] lg:flex">
             <li className="my-6 flex w-full items-center justify-center underline">
@@ -893,10 +832,6 @@ export default function Footer() {
 
               <div onClick={() => setShowModalMyInformation(true)}>
                 <LinkAtom Routes={links5} Style="linkFooter" />
-              </div>
-
-              <div onClick={() => setShowModalCodeOfConduct(true)}>
-                <LinkAtom Routes={links6} Style="linkFooter" />
               </div>
             </li>
           </ul>
@@ -964,7 +899,7 @@ export default function Footer() {
             <div className="align-center m-auto max-w-4xl text-center">
               <Text
                 TextClassProps=""
-                Text="©2022 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved"
+                Text="©2024 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved"
                 Style="normal"
               />
             </div>
@@ -987,7 +922,7 @@ export default function Footer() {
             <div className="align-center m-auto max-w-4xl text-center">
               <Text
                 TextClassProps=""
-                Text="©2022 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved"
+                Text="©2024 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved"
                 Style="subtitle"
               />
             </div>
