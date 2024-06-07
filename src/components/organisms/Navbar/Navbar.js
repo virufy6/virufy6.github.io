@@ -250,11 +250,11 @@ useEffect(() => { // closes mobile dropdown when screen size changes
                                         {ourTechnology?.section}
                                     </Link>
 
-                                    <div className={`fixed hidden w-[200px] flex-col drop-shadow-lg hover:flex peer-hover:flex text-center ${navbar ? 'relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2' :'bg-transparent ml-[-60px]'}`}>
-                                        <Link className="px-5 py-3 text-[white] hover:font-bold" href="/ai" >
+                                    <div className={`fixed hidden w-[200px] flex-col drop-shadow-lg hover:flex peer-hover:flex text-center ${navbar ? 'relative bg-black mt-[0.3rem] z-10 left-1/2 transform -translate-x-1/2' :'bg-transparent ml-[-60px]'}`}>
+                                        <Link className="px-5 py-2 text-[white] hover:font-bold" href="/ai" >
                                             {ourTechnology?.howItWorks}
                                         </Link>
-                                        <Link className="px-5 py-3 text-[white] hover:font-bold" href="/publications">
+                                        <Link className="px-5 py-2 text-[white] hover:font-bold" href="/publications">
                                             {ourTechnology?.OurResearch}
                                         </Link>
                                     </div>
@@ -268,8 +268,24 @@ useEffect(() => { // closes mobile dropdown when screen size changes
                                     <Link className="hover:font-bold peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left
                                     relative before:w-full before:h-0.5 before:origin-right before:transition-transform
                                     before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0" href="">
-                                        {coughCheckApp}
+                                        {coughCheckApp?.section}
                                     </Link>
+
+                                    <div className={`fixed hidden w-[200px] flex-col drop-shadow-lg hover:flex peer-hover:flex text-center ${navbar ? 'relative bg-black mt-[0.3rem] z-10 left-1/2 transform -translate-x-1/2' :'bg-transparent ml-[-60px]'}`}>
+                                        <Link className="px-5 py-2 text-[white] hover:font-bold" href="/" >
+                                            {coughCheckApp?.covid19}
+                                        </Link>
+                                        <Link className="px-5 py-2 text-[white] hover:font-bold" href="/">
+                                            {coughCheckApp?.flu}
+                                        </Link>  
+                                        <Link className="px-5 py-2 text-[white] hover:font-bold" href="/">
+                                            {coughCheckApp?.copd}
+                                        </Link>  
+                                        <Link className="px-5 py-2 text-[white] hover:font-bold" href="/">
+                                            {coughCheckApp?.rsv}
+                                        </Link>
+                                    </div>
+
                                 </div>
                             </li>
                             {/* about us link */}
@@ -285,7 +301,7 @@ useEffect(() => { // closes mobile dropdown when screen size changes
                                     {aboutUs?.section}
                                 </Link>
 
-                                <div className={`fixed hidden w-[200px] flex-col drop-shadow-lg hover:flex peer-hover:flex text-center ${navbar? 'relative bg-black mt-[0.3rem] z-10 left-1/2 transform -translate-x-1/2' : 'bg-transparent ml-[-60px]'}`}>
+                                <div className={`fixed hidden w-[200px] flex-col drop-shadow-lg hover:flex peer-hover:flex text-center ${navbar? 'relative bg-black mt-[0.4rem] z-10 left-1/2 transform -translate-x-1/2' : 'bg-transparent ml-[-60px]'}`}>
                                     <Link
                                         className="pt-6 pb-3 text-white hover:font-bold"
                                         href="/our-story"
