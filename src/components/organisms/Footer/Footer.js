@@ -59,10 +59,10 @@ export default function Footer() {
       links1.map((link, index) => {
         link.route === window.location.pathname
           ? setActiveLink(link.label)
-          : null
+          : ''
       })
     }
-  }, [])
+  })
 
   return (
     <>
@@ -803,6 +803,7 @@ export default function Footer() {
             <li className="mt-8 flex w-full justify-center space-x-6 align-text-bottom xl:space-x-10">
               {links1.map((link, index) => {
                 return (
+                  // footer links 
                   <Link
                     key={index}
                     className={`${
