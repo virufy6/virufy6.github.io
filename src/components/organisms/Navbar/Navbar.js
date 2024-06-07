@@ -243,7 +243,7 @@ useEffect(() => { // closes mobile dropdown when screen size changes
                                 <div>
 
                                     <Link
-                                        className={`hover:font-bold ${activeLink === 'ourTechnology'
+                                        className={`${activeLink === 'ourTechnology'
                                             ? 'peer py-2 text-white solid border-b-2'
                                             : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}`}
                                         href="/ai">
@@ -251,7 +251,7 @@ useEffect(() => { // closes mobile dropdown when screen size changes
                                     </Link>
 
                                     <div className={`fixed hidden w-[200px] flex-col drop-shadow-lg hover:flex peer-hover:flex text-center ${navbar ? 'relative bg-black mt-[0.3rem] z-10 left-1/2 transform -translate-x-1/2' :'bg-transparent ml-[-60px]'}`}>
-                                        <Link className="px-5 py-2 text-[white] hover:font-bold" href="/ai" >
+                                        <Link className="px-5 py-2 pt-5 text-[white] hover:font-bold" href="/ai" >
                                             {ourTechnology?.howItWorks}
                                         </Link>
                                         <Link className="px-5 py-2 text-[white] hover:font-bold" href="/publications">
@@ -265,14 +265,14 @@ useEffect(() => { // closes mobile dropdown when screen size changes
                             {/* coughcheck app link */}
                             <li className="text-white">
                                 <div>
-                                    <Link className="hover:font-bold peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left
+                                    <Link className="peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left
                                     relative before:w-full before:h-0.5 before:origin-right before:transition-transform
                                     before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0" href="">
                                         {coughCheckApp?.section}
                                     </Link>
 
                                     <div className={`fixed hidden w-[200px] flex-col drop-shadow-lg hover:flex peer-hover:flex text-center ${navbar ? 'relative bg-black mt-[0.3rem] z-10 left-1/2 transform -translate-x-1/2' :'bg-transparent ml-[-60px]'}`}>
-                                        <Link className="px-5 py-2 text-[white] hover:font-bold" href="/" >
+                                        <Link className="px-5 py-2 pt-5 text-[white] hover:font-bold" href="/" >
                                             {coughCheckApp?.covid19}
                                         </Link>
                                         <Link className="px-5 py-2 text-[white] hover:font-bold" href="/">
@@ -292,7 +292,7 @@ useEffect(() => { // closes mobile dropdown when screen size changes
                             <li className="text-white">
                                 <div>
                                 <Link
-                                    className={`hover:font-bold ${activeLink === 'aboutUs'
+                                    className={`${activeLink === 'aboutUs'
                                         ? 'peer py-2 text-white solid border-b-2'
                                         : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}
                                         `}
@@ -332,7 +332,7 @@ useEffect(() => { // closes mobile dropdown when screen size changes
                             <li className="text-white">
                                 <div>
                                 <Link
-                                    className={`hover:font-bold ${activeLink === 'faq'
+                                    className={`${activeLink === 'faq'
                                         ? 'peer py-2 text-white solid border-b-2'
                                         : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}`}
                                     href="/FAQ"
