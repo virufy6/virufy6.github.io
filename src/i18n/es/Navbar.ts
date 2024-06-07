@@ -7,7 +7,13 @@ export const navbar: NavbarType = {
     howItWorks: 'AI',
     OurResearch: 'Publicaciones',
   },
-  coughCheckApp: 'CoughCheck App',
+  coughCheckApp: {
+    section: 'CoughCheck App',
+    covid19: 'Covid-19',
+    flu: 'Gripe',
+    copd: 'COPD',
+    rsv: 'RSV'
+  },
   aboutUs: {
     section: 'Sobre Nosotros',
     ourStory: 'Nuestra Historia',
