@@ -229,7 +229,7 @@ useEffect(() => { // closes mobile dropdown when screen size changes
                             <li className="text-white">
                                 <div>
                                     <Link
-                                        className={`${activeLink === 'home'
+                                        className={`${navbar?'font-bold':''} ${activeLink === 'home'
                                             ? 'py-2 solid border-b-2'
                                             : 'py-2 hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}`}
                                         href="/home"
@@ -243,15 +243,15 @@ useEffect(() => { // closes mobile dropdown when screen size changes
                                 <div>
 
                                     <Link
-                                        className={`${activeLink === 'ourTechnology'
+                                        className={`${navbar?'font-bold ':''} ${activeLink === 'ourTechnology'
                                             ? 'peer py-2 text-white solid border-b-2'
                                             : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}`}
                                         href="/ai">
                                         {ourTechnology?.section}
                                     </Link>
 
-                                    <div className={`fixed hidden w-[200px] flex-col drop-shadow-lg hover:flex peer-hover:flex text-center ${navbar ? 'relative bg-black mt-[0.3rem] z-10 left-1/2 transform -translate-x-1/2' :'bg-transparent ml-[-60px]'}`}>
-                                        <Link className="px-5 py-2 pt-5 text-[white] hover:font-bold" href="/ai" >
+                                    <div className={`fixed w-[200px] flex-col drop-shadow-lg text-center ${navbar ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2' : 'hidden ml-[-60px]'} hover:flex peer-hover:flex`}>
+                                    <Link className="px-5 py-2 pt-5 text-[white] hover:font-bold" href="/ai" >
                                             {ourTechnology?.howItWorks}
                                         </Link>
                                         <Link className="px-5 py-2 text-[white] hover:font-bold" href="/publications">
@@ -265,13 +265,13 @@ useEffect(() => { // closes mobile dropdown when screen size changes
                             {/* coughcheck app link */}
                             <li className="text-white">
                                 <div>
-                                    <Link className="peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left
+                                    <Link className={`${navbar?'font-bold':''} peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left
                                     relative before:w-full before:h-0.5 before:origin-right before:transition-transform
-                                    before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0" href="">
+                                    before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0`} href="">
                                         {coughCheckApp?.section}
                                     </Link>
 
-                                    <div className={`fixed hidden w-[200px] flex-col drop-shadow-lg hover:flex peer-hover:flex text-center ${navbar ? 'relative bg-black mt-[0.3rem] z-10 left-1/2 transform -translate-x-1/2' :'bg-transparent ml-[-60px]'}`}>
+                                    <div className={`fixed w-[200px] flex-col drop-shadow-lg text-center ${navbar ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2' : 'hidden ml-[-35px]'} hover:flex peer-hover:flex`}>
                                         <Link className="px-5 py-2 pt-5 text-[white] hover:font-bold" href="/" >
                                             {coughCheckApp?.covid19}
                                         </Link>
@@ -285,14 +285,14 @@ useEffect(() => { // closes mobile dropdown when screen size changes
                                             {coughCheckApp?.rsv}
                                         </Link>
                                     </div>
-
                                 </div>
                             </li>
+
                             {/* about us link */}
                             <li className="text-white">
                                 <div>
                                 <Link
-                                    className={`${activeLink === 'aboutUs'
+                                    className={`${navbar?'font-bold':''} ${activeLink === 'aboutUs'
                                         ? 'peer py-2 text-white solid border-b-2'
                                         : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}
                                         `}
@@ -301,7 +301,7 @@ useEffect(() => { // closes mobile dropdown when screen size changes
                                     {aboutUs?.section}
                                 </Link>
 
-                                <div className={`fixed hidden w-[200px] flex-col drop-shadow-lg hover:flex peer-hover:flex text-center ${navbar? 'relative bg-black mt-[0.4rem] z-10 left-1/2 transform -translate-x-1/2' : 'bg-transparent ml-[-60px]'}`}>
+                                <div className={`fixed w-[200px] flex-col drop-shadow-lg text-center ${navbar ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2' : 'hidden ml-[-60px]'} hover:flex peer-hover:flex`}>
                                     <Link
                                         className="pt-6 pb-3 text-white hover:font-bold"
                                         href="/our-story"
@@ -332,7 +332,7 @@ useEffect(() => { // closes mobile dropdown when screen size changes
                             <li className="text-white">
                                 <div>
                                 <Link
-                                    className={`${activeLink === 'faq'
+                                    className={`${navbar?'font-bold':''} ${activeLink === 'faq'
                                         ? 'peer py-2 text-white solid border-b-2'
                                         : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}`}
                                     href="/FAQ"
