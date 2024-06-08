@@ -65,19 +65,20 @@ export default function Navbar() {
     window.location.pathname === '/FAQ' ? setActiveLink('faq') : setActiveLink('');
   })
   
-useEffect(() => { // closes mobile dropdown when screen size changes 
-    const handleResize = () => {
-    if (window.innerWidth <= 1024) {
-        setNavbar(false);
-    }
-    };
-    window.addEventListener('resize', handleResize);
-    handleResize();
+// useEffect(() => { // closes mobile dropdown when screen size changes 
+//     const handleResize = () => {
+//     if (window.innerWidth <= 1024) {
+//         setNavbar(false);
+//     }
+//     };
 
-    return () => {
-    window.removeEventListener('resize', handleResize);
-    };
-}, []);
+//     handleResize();
+//     window.addEventListener('resize', handleResize);
+
+//     return () => {
+//     window.removeEventListener('resize', handleResize);
+//     };
+// }, []);
 
   return (
     <div className="bg-[#000]">
