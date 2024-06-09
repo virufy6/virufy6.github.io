@@ -18,6 +18,7 @@ import SPA from '~/assets/static/icons/navbar/flags/Spa.png'
 import JPN from '~/assets/static/icons/navbar/flags/Jpn.png'
 import POR from '~/assets/static/icons/navbar/flags/Por.png'
 import LocaleSelector from '~/components/atoms/Select/LocaleSelector'
+import { useRouter } from 'next/router'
 
 export default function Navbar() {
   const options = [
@@ -43,6 +44,8 @@ export default function Navbar() {
 
   const [activeLink, setActiveLink] = useState('');
 
+  const router = useRouter();
+
   useEffect(() => {
     window.location.pathname === '/es/home' ? setActiveLink('home') :
     window.location.pathname === '/es/ai' ? setActiveLink('ourTechnology') :
@@ -64,6 +67,12 @@ export default function Navbar() {
     window.location.pathname === '/one-young-world' ? setActiveLink('aboutUs') :
     window.location.pathname === '/FAQ' ? setActiveLink('faq') : setActiveLink('');
   })
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+        setNavbar(false);
+    }
+}, [router.pathname]);
 
   return (
     <div className="bg-[#000]">
