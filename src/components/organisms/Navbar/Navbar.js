@@ -65,10 +65,6 @@ export default function Navbar() {
     window.location.pathname === '/FAQ' ? setActiveLink('faq') : setActiveLink('');
   })
 
-    useEffect(()=> { // this closes mobile menu when a link is clicked
-        setNavbar(false);   
-    },[window.location.pathname])
-
   return (
     <div className="bg-[#000]">
         <nav className={`sticky z-[100] w-full shadow ${navbar? 'bg-black':'bg-transparent'}`}>
