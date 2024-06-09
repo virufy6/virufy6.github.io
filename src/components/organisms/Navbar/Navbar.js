@@ -64,21 +64,10 @@ export default function Navbar() {
     window.location.pathname === '/one-young-world' ? setActiveLink('aboutUs') :
     window.location.pathname === '/FAQ' ? setActiveLink('faq') : setActiveLink('');
   })
-  
-// useEffect(() => { // closes mobile dropdown when screen size changes 
-//     const handleResize = () => {
-//     if (window.innerWidth <= 1024) {
-//         setNavbar(false);
-//     }
-//     };
 
-//     handleResize();
-//     window.addEventListener('resize', handleResize);
-
-//     return () => {
-//     window.removeEventListener('resize', handleResize);
-//     };
-// }, []);
+    useEffect(()=> { // this closes mobile menu when a link is clicked
+        setNavbar(false);   
+    },[window.location.pathname])
 
   return (
     <div className="bg-[#000]">
