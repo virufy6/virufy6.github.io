@@ -361,7 +361,7 @@ useEffect(() => {
                                 <Select Text="" Options={options} optionsIcons={optionsIcons} />
                                 <LocaleSelector optionsIcons={optionsIcons}></LocaleSelector>
                             </li> */}
-                            <li className="text-[#393939] pb-20">
+                            <li className={`text-[#393939] ${navbar?'pb-20':''}`}>
                                 <Button
                                     onClick={() => setShowModal(true)}
                                     size="medium"
