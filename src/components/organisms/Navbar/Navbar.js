@@ -11,6 +11,7 @@ import Select from '~/components/atoms/Select/Select'
 import Button from '~/components/atoms/button/Button'
 import React, { useState, useEffect } from 'react'
 import { useI18n } from '~/i18n'
+import { debounce } from 'lodash'; // Make sure to install lodash
 
 //Flags
 import ENG from '~/assets/static/icons/navbar/flags/Eng.png'
@@ -73,6 +74,25 @@ export default function Navbar() {
         setNavbar(false);
     }
 }, [router.pathname]);
+
+const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
+
+useEffect(() => {
+    if (typeof window !== 'undefined') {
+        const handleResize = debounce(() => {
+            if (Math.abs(window.innerWidth - windowWidth) > 50) { // Adjust the threshold as needed
+                setNavbar(false);
+                setWindowWidth(window.innerWidth);
+            }
+        }, 300); // Adjust the debounce delay as needed
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }
+}, [windowWidth]);
 
   return (
     <div className="bg-[#000]">
