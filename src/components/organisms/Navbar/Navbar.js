@@ -75,16 +75,15 @@ export default function Navbar() {
     }
 }, [router.pathname]);
 
-const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
+const SOME_VARIABLE = 976;
 
 useEffect(() => {
     if (typeof window !== 'undefined') {
-        const handleResize = debounce(() => {
-            if (Math.abs(window.innerWidth - windowWidth) > 50) { // Adjust the threshold as needed
+        const handleResize = () => {
+            if (window.innerWidth >= SOME_VARIABLE) {
                 setNavbar(false);
-                setWindowWidth(window.innerWidth);
             }
-        }, 300); // Adjust the debounce delay as needed
+        };
 
         window.addEventListener('resize', handleResize);
 
@@ -92,7 +91,7 @@ useEffect(() => {
             window.removeEventListener('resize', handleResize);
         };
     }
-}, [windowWidth]);
+}, []);
 
   return (
     <div className="bg-[#000]">
