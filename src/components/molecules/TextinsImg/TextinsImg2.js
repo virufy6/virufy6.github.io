@@ -24,7 +24,9 @@ export default function TextinsImg({ sizeImg, borderImg, src, altImg, Text }) {
 					translate-x-[-50%]
 					text-white
 					text-center
-          font-semibold"
+          font-semibold
+          pt-10
+          text-xl"
       />
     </div>
   )
