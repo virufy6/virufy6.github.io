@@ -11,7 +11,6 @@ import Select from '~/components/atoms/Select/Select'
 import Button from '~/components/atoms/button/Button'
 import React, { useState, useEffect } from 'react'
 import { useI18n } from '~/i18n'
-import { debounce } from 'lodash'; // Make sure to install lodash
 
 //Flags
 import ENG from '~/assets/static/icons/navbar/flags/Eng.png'
@@ -69,18 +68,18 @@ export default function Navbar() {
     window.location.pathname === '/FAQ' ? setActiveLink('faq') : setActiveLink('');
   })
 
-  useEffect(() => {
+useEffect(() => {
     if (typeof window !== 'undefined') {
         setNavbar(false);
     }
 }, [router.pathname]);
 
-const SOME_VARIABLE = 976;
+const SCREEN_SIZE = 976;
 
 useEffect(() => {
     if (typeof window !== 'undefined') {
         const handleResize = () => {
-            if (window.innerWidth >= SOME_VARIABLE) {
+            if (window.innerWidth >= SCREEN_SIZE) {
                 setNavbar(false);
             }
         };
@@ -95,7 +94,7 @@ useEffect(() => {
 
   return (
     <div className="bg-[#000]">
-        <nav className={`sticky z-[100] w-full shadow ${navbar? 'bg-black':'bg-transparent'}`}>
+        <nav className={`sticky z-[100] w-full shadow ${navbar ? 'bg-black' : 'bg-transparent'}`}>
             <div>
                 {showModal ? ( // donate modal 
                 <>
@@ -205,7 +204,7 @@ useEffect(() => {
                     />
                     </Link>
                     <div className="lg:hidden">
-                    {/* // hambuger and x button */}
+                    {/* // hamburger and x button */}
                     <button 
                         className="rounded-lg p-2 text-gray-700 outline-none focus:border focus:border-gray-400"
                         onClick={() => setNavbar(!navbar)}
@@ -243,7 +242,7 @@ useEffect(() => {
                             <li className="text-white">
                                 <div>
                                     <Link
-                                        className={`${navbar?'font-bold':''} ${activeLink === 'home'
+                                        className={`${navbar ? 'font-bold' : ''} ${activeLink === 'home'
                                             ? 'py-2 solid border-b-2'
                                             : 'py-2 hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}`}
                                         href="/home"
@@ -257,7 +256,7 @@ useEffect(() => {
                                 <div>
 
                                     <Link
-                                        className={`${navbar?'font-bold ':''} ${activeLink === 'ourTechnology'
+                                        className={`${navbar ? 'font-bold' : ''} ${activeLink === 'ourTechnology'
                                             ? 'peer py-2 text-white solid border-b-2'
                                             : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}`}
                                         href="/ai">
@@ -279,7 +278,7 @@ useEffect(() => {
                             {/* coughcheck app link */}
                             <li className="text-white">
                                 <div>
-                                    <Link className={`${navbar?'font-bold':''} peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left
+                                    <Link className={`${navbar ? 'font-bold' : ''} peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left
                                     relative before:w-full before:h-0.5 before:origin-right before:transition-transform
                                     before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0`} href="">
                                         {coughCheckApp?.section}
@@ -306,7 +305,7 @@ useEffect(() => {
                             <li className="text-white">
                                 <div>
                                 <Link
-                                    className={`${navbar?'font-bold':''} ${activeLink === 'aboutUs'
+                                    className={`${navbar ? 'font-bold' : ''} ${activeLink === 'aboutUs'
                                         ? 'peer py-2 text-white solid border-b-2'
                                         : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}
                                         `}
@@ -346,7 +345,7 @@ useEffect(() => {
                             <li className="text-white">
                                 <div>
                                 <Link
-                                    className={`${navbar?'font-bold':''} ${activeLink === 'faq'
+                                    className={`${navbar ? 'font-bold' : ''} ${activeLink === 'faq'
                                         ? 'peer py-2 text-white solid border-b-2'
                                         : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}`}
                                     href="/FAQ"
@@ -360,7 +359,7 @@ useEffect(() => {
                                 <Select Text="" Options={options} optionsIcons={optionsIcons} />
                                 <LocaleSelector optionsIcons={optionsIcons}></LocaleSelector>
                             </li> */}
-                            <li className={`text-[#393939] ${navbar?'pb-20':''}`}>
+                            <li className={`text-[#393939] ${navbar ? 'pb-20' : ''}`}>
                                 <Button
                                     onClick={() => setShowModal(true)}
                                     size="medium"
