@@ -13,7 +13,7 @@ import { useI18n } from '~/i18n'
 
 export default function Footer() {
   const links1 = [
-    { label: 'Home', route: '/home' },
+    { label: 'Home', route: '/' },
     { label: 'Technology', route: '/ai' },
     { label: 'CoughCheck App', route: '/GetInvolved' },
     { label: 'About', route: '/our-story' },
