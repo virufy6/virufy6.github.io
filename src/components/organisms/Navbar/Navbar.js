@@ -185,7 +185,7 @@ useEffect(() => {
             <div className="lg:max-w-8lg justify-between px-3 lg:mx-4 lg:flex lg:items-center lg:px-2 xl:mx-9">
                 <div>
                 <div className="flex items-center justify-between py-3 lg:block lg:py-5">
-                    <Link href="/home" className="flex lg:hidden">
+                    <Link href="/" className="flex lg:hidden">
                     <ImageAtomLocal
                         imagesize="px100x48"
                         border="none"
@@ -194,7 +194,7 @@ useEffect(() => {
                         ImageStyleProps=""
                     />
                     </Link>
-                    <Link href="/home" className="hidden lg:flex">
+                    <Link href="/" className="hidden lg:flex">
                     <ImageAtomLocal
                         imagesize="px160"
                         border="none"
@@ -245,7 +245,7 @@ useEffect(() => {
                                         className={`${navbar ? 'font-bold' : ''} ${activeLink === 'home'
                                             ? 'py-2 solid border-b-2'
                                             : 'py-2 hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}`}
-                                        href="/home"
+                                        href="/"
                                     >
                                         {home}
                                     </Link>
