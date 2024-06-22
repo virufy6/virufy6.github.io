@@ -87,7 +87,7 @@ export default function Section2({
               />
             </div>
           </div>
-          <div className="flex flex-col items-start  mt-[3.5rem] sm:mt-24 lg:mt-100 xl:mt-[27rem] mt-2xl mt-3xl space-y-2 md:space-y-8 sm:ml-0 lg:ml-20">
+          <div className="flex flex-col items-start  mt-[3.5rem] sm:mt-24 lg:mt-100 xl:mt-[27rem] mt-2xl mt-3xl space-y-2 md:space-y-8 sm:ml-0">
             <div className="w-full max-w-xs md:max-w-md">
               <p className="text-[0.7rem] leading-[0.7rem] sm:text-[0.75rem] sm:leading-[1rem] md:text-[1rem] md:leading-[1.5rem] lg:text-[1.125rem] lg:leading-[1.75rem] xl:text-[1.25rem] xl:leading-[2rem]">
                 {mainText}
@@ -117,7 +117,7 @@ export default function Section2({
                 </button>
             </div>
           </div>
-          <div className="flex flex-col items-start mt-[0.2rem] sm:mt-[0rem] sm:ml-0 lg:ml-20">
+          <div className="flex flex-col items-start mt-[0.2rem] sm:mt-[0rem] sm:ml-0">
             <div className="w-full max-w-screen-lg">
               <p className="text-[0.4rem] leading-[0.6rem] md:text-[0.875rem] md:leading-[1.25rem] lg:text-[1rem] lg:leading-[1.5rem] xl:text-[1.125rem] xl:leading-[1.75rem] text-gray-400">
                 {disclaimer1}
