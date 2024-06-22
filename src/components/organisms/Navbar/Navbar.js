@@ -47,7 +47,7 @@ export default function Navbar() {
   const router = useRouter();
 
   useEffect(() => {
-    window.location.pathname === '/es/home' ? setActiveLink('home') :
+    window.location.pathname === '/es/' ? setActiveLink('home') :
     window.location.pathname === '/es/ai' ? setActiveLink('ourTechnology') :
     window.location.pathname === '/es/publications' ? setActiveLink('ourTechnology') :
     window.location.pathname === '/es/our-story' ? setActiveLink('aboutUs') :
@@ -57,7 +57,6 @@ export default function Navbar() {
     window.location.pathname === '/es/one-young-world' ? setActiveLink('aboutUs') :
     window.location.pathname === '/es/FAQ' ? setActiveLink('faq') :
     window.location.pathname === '/' ? setActiveLink('home') :
-    window.location.pathname === '/home' ? setActiveLink('home') :
     window.location.pathname === '/ai' ? setActiveLink('ourTechnology') :
     window.location.pathname === '/publications' ? setActiveLink('ourTechnology') :
     window.location.pathname === '/our-story' ? setActiveLink('aboutUs') :
