@@ -11,3 +11,9 @@ npm i
 ```bash
 npm run dev
 ```
+
+## Build App
+
+```bash
+npm run build
+```
