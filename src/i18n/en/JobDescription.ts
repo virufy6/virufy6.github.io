@@ -39,7 +39,7 @@ export const JobDescription = {
         '10+ hours per week while actively localizing policies',
       ],
       questions: [
-        'Reach out to vivek.krishnani@virufy.org and we will get back to you promptly.',
+        'Reach out to frederick.cosper@virufy.com and we will get back to you promptly',
       ]
     },
     {
@@ -71,7 +71,7 @@ export const JobDescription = {
         '10+ hours per week while actively localizing policies',
       ],
       questions: [
-        'Reach out to vivek.krishnani@virufy.org and we will get back to you promptly.',
+        'Reach out to frederick.cosper@virufy.com and we will get back to you promptly',
       ]
     },
   ],
