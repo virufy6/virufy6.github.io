@@ -1,32 +1,35 @@
-import { StaticImageData } from 'next/image'
-
-interface Card {
-  route: StaticImageData
-  name: string
-  text: string
-}
+import type { ImageText, TypeText } from './BaseInterfaces'
 
 export interface FAQ {
-  sectionSearchQuestion: {
-    title: string
-    descriptionFirstSearch: string
-    secondDescriptionSearch: string
-  }
-  sectionCardsQuestionsTopics: {
-    title: string
-    cards: Card[]
-  }
-  frequentQuestions: FrequentQuestion[]
+  headerSection: FAQHeader
+  topicsSection: FAQTopics
+  questionsByTopic: QuestionsByTopic
 }
 
-export interface FrequentQuestion {
-  id: number
-  category: string
-  faqs: Question[]
+interface FAQHeader extends ImageText {
+  title: TypeText[]
+  texts: TypeText[]
+  input: FAQInput
 }
 
-export interface Question {
-  id: number
+interface FAQInput extends ImageText {
+  placeholder: string
+}
+
+interface FAQTopics {
   title: string
-  text: string
+  cards: FAQTopicCard[]
+}
+
+export interface FAQTopicCard extends ImageText {
+  title: string
+}
+
+interface QuestionsByTopic {
+  [key: string]: QA[]
+}
+
+export interface QA {
+  question: string
+  answer: string
 }

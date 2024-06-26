@@ -1,102 +1,122 @@
-import Card1 from '~/assets/static/images/ourStory/card1.png'
-import Card2 from '~/assets/static/images/ourStory/card2.png'
-import Card3 from '~/assets/static/images/ourStory/card3.png'
-import Card4 from '~/assets/static/images/ourStory/card4.png'
-import Card5 from '~/assets/static/images/ourStory/card5.png'
-import Card7 from '~/assets/static/images/ourStory/card7.png'
-export const faq = {
-  sectionSearchQuestion: {
-    title: '¿Cómo podemos ayudar?',
-    descriptionFirstSearch:
-      'Introduzca una palabra clave o un tema en el cuadro de búsqueda',
-    secondDescriptionSearch:
-      'o elija una categoría para encontrar rápidamente la ayuda que necesita',
-  },
-  sectionCardsQuestionsTopics: {
-    title: 'TEMAS FRECUENTES',
-    cards: [
+import {
+  BgHeader,
+  GlobeIcon,
+  MonitorIcon,
+  PhoneInHandIcon,
+  PrivacyIcon,
+  QuestionMarkIcon,
+  RecycleIcon,
+  SearchIcon,
+} from '~/assets/static/images/faq'
+
+export const FAQ = {
+  headerSection: {
+    img: BgHeader,
+    altText: '',
+    title: [
       {
-        route: Card1,
-        name: '',
-        text: 'Aplicación Virufy',
+        type: 'text',
+        text: 'How can we ',
       },
       {
-        route: Card2,
-        name: '',
-        text: 'Acerca de Virufy',
+        type: 'span',
+        text: 'help ',
       },
       {
-        route: Card3,
-        name: '',
-        text: 'Acerca de la IA',
+        type: 'text',
+        text: 'you?',
+      },
+    ],
+    input: {
+      placeholder: 'Start typing your search...',
+      img: SearchIcon,
+      altText: 'search icon',
+    },
+    texts: [
+      {
+        type: 'text',
+        text: 'Or ',
       },
       {
-        route: Card4,
-        name: '',
-        text: 'Finanzas',
+        type: 'span',
+        text: 'choose ',
       },
       {
-        route: Card5,
-        name: '',
-        text: 'Privacidad',
-      },
-      {
-        route: Card7,
-        name: '',
-        text: 'Otros',
+        type: 'text',
+        text: 'an option below to help find what you are looking for.',
       },
     ],
   },
-  frequentQuestions: [
-    {
-      id: 1,
-      category: 'Aplicación Virufy',
-      faqs: [
-        {
-          id: 10,
-          title:
-            '¿Cuándo y cómo dará la aplicación los resultados de la predicción COVID-19?',
-          text: 'Actualmente, nuestra aplicación solo sirve para recopilar datos. No podemos lanzar una aplicación de predicción de COVID-19 sin la aprobación de los departamentos de salud pública de cada país y estudios clínicos para validar la tecnología de IA en las condiciones locales. Este proceso puede llevar algunas semanas o meses dependiendo de la velocidad del socio gubernamental. Virufy agradece la colaboración de las autoridades sanitarias y los hospitales para poner la tecnología a disposición de la población de forma gratuita y optimizar el uso de las costosas pruebas PCR sólo cuando sea necesario.',
-        },
-        {
-          id: 11,
-          title:
-            '¿Dónde puedo descargar la aplicación? Estará disponible para iOS y Android?',
-          text: 'La aplicación estará disponible para su descarga en https://virufy.org/app, ya que en algunos países necesitamos la aprobación gubernamental o médica para poner nuestra aplicación en las tiendas de aplicaciones oficiales. La aplicación puede conectarse a y desde un smartphone. Por lo tanto, es compatible con cualquier sistema operativo, incluidos iOS o Android.',
-        },
-      ],
-    },
-    {
-      id: 2,
-      category: 'Acerca de Virufy',
-      faqs: [
-        {
-          id: 20,
-          title: '¿Cómo se creó esta iniciativa?',
-          text: 'Cuando estalló la pandemia, el fundador de Virufy, Amil, sabía que los teléfonos inteligentes eran omnipresentes y que el COVID afectaba a la nariz, la garganta y los pulmones. Su hipótesis era que los sonidos de la respiración y la tos podían analizarse con aprendizaje automático para detectar patrones de COVID. Deseoso de lograr un impacto positivo, orquestó un estudio clínico con 362 pacientes en un prestigioso hospital universitario. El equipo original de Virufy, que empezó con estudiantes graduados en IA de Stanford, se amplió a voluntarios de universidades de todo el mundo. Como embajador de One Young World Japan que ha viajado a más de una docena de países, Amil comprende la perspectiva global y cómo una solución basada en un smartphone puede ser utilizada por personas de todo el mundo.',
-        },
-        {
-          id: 21,
-          title: '¿Qué hará su organización?',
-          text: 'El objetivo de Virufy es crear el mayor conjunto de datos de sonidos de tos ferina del mundo generando un movimiento en el que millones de personas aporten colectivamente sus datos para luchar contra nuestro enemigo común, la tos ferina. Como empresa sin ánimo de lucro 501(c)(3), libre de trámites burocráticos institucionales y con un equipo diverso en 20 países, estamos bien posicionados para hacerlo realidad. Una vez aprobadas por las autoridades sanitarias locales, las aplicaciones para teléfonos inteligentes que permiten realizar pruebas rápidas y gratuitas del COVID se lanzarán en los países de renta baja. Estas aplicaciones permitirán realizar pruebas anónimas a gran escala para frenar la propagación del virus. Esperamos unir a personas de todo el mundo en nuestro esfuerzo por detener el COVID y crear un nuevo paradigma de colaboración mundial. Queremos crear un futuro en el que la propagación comunitaria de enfermedades infecciosas se reduzca en gran medida, ya que la población mundial puede detectar sus enfermedades en una fase temprana gracias a las aplicaciones para teléfonos inteligentes.',
-        },
-      ],
-    },
-    {
-      id: 3,
-      category: 'Acerca de la IA',
-      faqs: [
-        {
-          id: 30,
-          title: '¿Por qué se distingue la tos COVID-19?',
-          text: 'Al igual que otras enfermedades respiratorias, COVID-19 daña la garganta y los pulmones, creando diferencias detectables en los patrones de tos. Por consiguiente, los sonidos de la tos pueden analizarse para detectar la COVID-19. En todo el Planeta, esta idea está siendo investigada activamente por varias instituciones de prestigio, entre ellas Carnegie Mellon (CMU), el MIT y Cambridge. Por ejemplo, la investigación realizada por la Universidad de Cambridge demostró que un simple clasificador binario de aprendizaje automático es capaz de clasificar a los pacientes positivos para COVID-19 a través de los sonidos de la respiración y la tos con gran precisión. Del mismo modo, los investigadores de la CMU identificaron 18 características de la voz que distinguen a los pacientes COVID-19 positivos y entrenaron un modelo académico para detectar COVID-19 con gran precisión.',
-        },
-        {
-          id: 31,
-          title: '¿Cómo detectará COVID-19 el algoritmo de IA de Virufy?',
-          text: 'Basándose en investigaciones anteriores, Virufy está desarrollando un algoritmo de IA que puede utilizarse para predecir con exactitud una infección por COVID-19 en cuestión de minutos a partir de grabaciones de sonidos de tos. Sin embargo, a diferencia de las investigaciones anteriores sobre la tos por COVID-19 que se centraban en la población estadounidense, Virufy pretende recopilar datos de múltiples lugares de todo el mundo. Como iniciativa dirigida por estudiantes con voluntarios de varios países, Virufy está desarrollando un modelo de diagnóstico de COVID-19 con una mayor inclusión racial y espacial a través de datos que incluyen una gama de etnias y diferencias fonológicas específicas de la comunidad.',
-        },
-      ],
-    },
-  ],
+  topicsSection: {
+    title: 'FAQ Topics',
+    cards: [
+      {
+        title: 'Virufy App',
+        img: PhoneInHandIcon,
+        altText: 'phone in hand icon',
+      },
+      {
+        title: 'About Virufy',
+        img: GlobeIcon,
+        altText: 'globe icon',
+      },
+      {
+        title: 'About AI',
+        img: RecycleIcon,
+        altText: 'recycle icon',
+      },
+      {
+        title: 'Finances',
+        img: MonitorIcon,
+        altText: 'monitor icon',
+      },
+      {
+        title: 'Privacy',
+        img: PrivacyIcon,
+        altText: 'privacy icon',
+      },
+      {
+        title: 'Other',
+        img: QuestionMarkIcon,
+        altText: 'question mark icon',
+      },
+    ],
+  },
+  questionsByTopic: {
+    'Virufy App': [
+      {
+        question: 'When and how will the app give COVID-19 prediction results?',
+        answer:
+          'Our app is currently for data collection only. We cannot release a COVID-19 prediction app without public health department approvals in each country and clinical studies to validate the AI technology in local conditions. This process can take some weeks or months depending on the speed of the government partner. Virufy welcomes partnerships from health officials and hospitals to bring the technology for free use to the people and to optimize usage of costly PCR tests only when necessary.',
+      },
+      {
+        question:
+          'Where can I download the app? Will it be available for iOS and Android?',
+        answer:
+          'The app will be available for download at https://virufy.org/app, as we need government or medical approval in some countries to put our app into the official app stores. The app can be connected to and from a smartphone. Thus, it is compatible with any operating system including iOS or Android.',
+      },
+      {
+        question: 'Will the application be available for free and worldwide?',
+        answer:
+          'As a 501(c)(3) non-profit organization, our intention is to make the app free for the benefit of low-income countries. However, we may need to charge a nominal fee to support our operations in case we are not able to raise enough funds.',
+      },
+      {
+        question: 'Do you plan to extend this app in a startup?',
+        answer:
+          'Virufy is a non-profit. We may partner with companies if needed to accelerate deployment of the app for the benefit of people.',
+      },
+      {
+        question: 'When will the app be available for my country?',
+        answer:
+          'Virufy strives to comply with data privacy laws which vary by country. We are very happy to extend to your country if we are able to connect with a pro bono data privacy lawyer to review our privacy policy and consent form.',
+      },
+    ],
+    'About Virufy': [
+      {
+        question: 'How was the initiative created?',
+        answer:
+          'When the pandemic hit, Virufy’s founder, Amil, knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs. He hypothesized that breathing and cough sounds could be analyzed with machine learning to detect COVID patterns. Wanting to make a positive impact, he orchestrated a clinical study with 362 patients in an esteemed university hospital. The original team of Virufy, beginning with Stanford graduate AI students, expanded to volunteers from universities around the world.As a One Young World Japan ambassador who has travelled to over a dozen countries, Amil understands the global perspective and how a smartphone-based solution can be used by people all over the world.',
+      },
+    ],
+  },
 }

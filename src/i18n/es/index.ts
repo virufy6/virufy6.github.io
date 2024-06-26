@@ -3,7 +3,7 @@ import { Ai } from './Ai'
 import { blogDetails } from './BlogDetails'
 import { blogListing } from './BlogListing'
 import { dashboard } from './Dashboard'
-import { faq } from './FAQ'
+import { FAQ } from './FAQ'
 import { footer } from './Footer'
 import { GetInvolved_ } from './GetInvolved'
 import { home } from './Home'
@@ -38,7 +38,7 @@ export const data: I18nData = {
   OurSupporters,
   blogListing,
   blogDetails,
-  faq,
+  FAQ,
   navbar,
   footer,
   ShareYourCough,

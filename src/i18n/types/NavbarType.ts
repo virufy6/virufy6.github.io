@@ -1,7 +1,7 @@
 export interface NavbarType {
   home: string
   ourTechnology: OurTechnology
-  coughCheckApp: string
+  coughCheckApp: CoughCheckApp
   aboutUs: AboutUs
   faq: string
   donate: string
@@ -11,6 +11,14 @@ export interface OurTechnology {
   section: string
   howItWorks: string
   OurResearch: string
+}
+
+export interface CoughCheckApp {
+  section: string
+  covid19: string
+  flu: string
+  copd: string
+  rsv: string
 }
 
 // export interface GetInvolved {

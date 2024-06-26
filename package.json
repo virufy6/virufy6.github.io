@@ -11,6 +11,7 @@
   "dependencies": {
     "date-fns": "^2.30.0",
     "keen-slider": "^6.8.5",
+    "lodash.debounce": "^4.0.8",
     "next": "^13.2.1",
     "next-share": "^0.20.0",
     "react": "18.2.0",
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "@types/eslint": "^8.21.1",
+    "@types/lodash.debounce": "^4.0.9",
     "@types/node": "^18.14.0",
     "@types/prettier": "^2.7.2",
     "@types/react": "^18.0.28",

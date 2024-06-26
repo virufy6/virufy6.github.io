@@ -31,7 +31,7 @@ export type I18nData = {
   OurSupporters?: OurSupporters
   blogListing?: BlogListing
   blogDetails?: BlogDetails
-  faq: FAQ
+  FAQ: FAQ
   navbar?: NavbarType
   footer: Footer
   ShareYourCough: ShareYourCough
