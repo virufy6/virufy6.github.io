@@ -45,6 +45,49 @@ const IdJob = () => {
     console.log('Response API: ', data)
   }, [data])
 
+<<<<<<< HEAD
+=======
+  const renderQuestions = (questions) => {
+    return questions.map((element, index) => {
+      const emailRegex = /\S+@\S+\.\S+/
+      const emailMatch = element.match(emailRegex)
+
+      if (emailMatch) {
+        const parts = element.split(emailRegex)
+        return (
+          <li
+            key={index}
+            style={{
+              color: 'white',
+              listStylePosition: 'inside',
+              paddingLeft: '1.2em',
+              textIndent: '-1.2em',
+            }}
+          >
+            {parts[0]}
+            <a href={`mailto:${emailMatch[0]}`} style={{ color: '#3074DC' }}>
+              {emailMatch[0]}
+            </a>
+            {parts[1]}
+          </li>
+        )
+      }
+      return (
+        <li
+          key={index}
+          style={{
+            listStylePosition: 'inside',
+            paddingLeft: '1.2em',
+            textIndent: '-1.2em',
+          }}
+        >
+          {element}
+        </li>
+      )
+    })
+  }
+
+>>>>>>> parent of 624f080 (Added extra position as suggested by Frederick and made a small UI change as suggested by Sherrie)
   return (
     <>
       {id == "404" ? (
