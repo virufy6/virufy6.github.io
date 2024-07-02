@@ -384,6 +384,38 @@ export const JobDescription = {
     },
     {
       id: 13,
+      jobTitle: 'Human Resources Administrative Assistant',
+      jobDescription:
+        'Seeking an individual to assist in all HR-related administrative tasks. This person will report directly to the Human Resources Team Lead.',
+      responsibilities: [
+        'Research and record data for each volunteer to help create a master data file.',
+        'Conduct an audit of the master list and other records on a monthly basis to keep updated.',
+        'Assist Talent Acquisition team in posting job descriptions and helping conduct first round interviews when needed.',
+        'Assist Talent Management Team by checking in with volunteers after one week of joining.',
+        'Assist in creating and updating organization’s SOPs and policies.',
+        'Misc. ad hoc research, and data organization.',
+        'All tasks as assigned.',
+      ],
+      minimumQualifications: [
+        'Be available on a flexible basis to address one-off tasks throughout the week.',
+        'Attention to Detail — Job requires being careful about detail and thorough in completing work tasks.',
+        'Cooperation — Job requires being pleasant with others on the job and displaying a good-natured, cooperative attitude.',
+        'Dependability — Job requires being reliable, responsible, and dependable, and fulfilling obligations.',
+        'Integrity — Handle sensitive and confidential information ethically.',
+        'Communicate professionally both internally and externally/verbally and written.',
+        'Working experience with web-based tools like Gsuite, Slack, etc.',
+      ],
+      desiredSkills: [
+        'Highly responsive, flexible with hours.',
+        'Self-motivated with a sense of urgency.',
+      ],
+      hours: ['Minimum 10 hours per week on a part-time volunteer basis.'],
+      questions: [
+        'Reach out to frederick.cosper@virufy.org and we will get back to you promptly.',
+      ],
+    },
+    {
+      id: 14,
       jobTitle: 'Corporate Attorney (IT Oriented)',
       jobDescription: '',
       responsibilities: [
@@ -410,7 +442,7 @@ export const JobDescription = {
       ],
     },
     {
-      id: 14,
+      id: 15,
       jobTitle: 'Paralegal',
       jobDescription:
         'Seeking an individual to contribute on a part-time volunteer basis and collaborate closely with the Virufy globally-dispersed legal team.',
@@ -441,7 +473,7 @@ export const JobDescription = {
       ],
     },
     {
-      id: 15,
+      id: 16,
       jobTitle: 'Business Analyst',
       jobDescription:
         'Business analysts are the drivers of our continued growth and success. With their commitment to innovation, these analysts seek, develop, and help implement strategic initiatives for improved efficiency and productivity. We’re currently searching for an experienced business analyst to help guide our organization to the future. From researching progressive systems solutions to evaluating their impacts, the ideal candidate will be a detailed planner, expert communicator, and top-notch analyst. This person should also be wholly committed to the discovery and development of innovative solutions in an ever-changing digital landscape.',
@@ -481,7 +513,7 @@ export const JobDescription = {
       ],
     },
     {
-      id: 16,
+      id: 17,
       jobTitle: 'Python Programmer',
       jobDescription: 'Looking for Python Programmers',
       responsibilities: [],
@@ -503,7 +535,7 @@ export const JobDescription = {
       ],
     },
     {
-      id: 17,
+      id: 18,
       jobTitle: 'Technical Writer',
       jobDescription:
         'Because of our commitment to client satisfaction, Virufy has grown into an industry leader. The driving force behind this commitment is an unwavering belief in clear and effective communications. We’re searching for an experienced technical writer to join our team and help take our client-focused services to new heights. The ideal candidate will have proven success in a highly technical field, such as software development, computer science, or engineering. Also important in this role are an ability to evaluate and analyze complex information and a natural desire to help people understand it.',
@@ -544,7 +576,7 @@ export const JobDescription = {
       ],
     },
     {
-      id: 18,
+      id: 19,
       jobTitle: 'Quality Assurance Engineer',
       jobDescription:
         'We are a healthcare AI nonprofit startup focused on developing innovative solutions to combat COVID-19. Our mission is to leverage artificial intelligence and machine learning to create a mobile application that can detect the presence of COVID-19 through analysis of cough sounds. We are committed to improving public health and safety by providing accurate and accessible tools for early detection and prevention of infectious diseases.',
@@ -580,7 +612,7 @@ export const JobDescription = {
       ],
     },
     {
-      id: 19,
+      id: 20,
       jobTitle: 'AWS Developer',
       jobDescription:
         'We are seeking an experienced AWS Developer to join our team. The ideal candidate will possess a strong background in building scalable, reliable, and maintainable services on AWS. You will collaborate with cross-functional teams to design, develop, and deploy applications and services on the AWS platform.',
@@ -623,7 +655,7 @@ export const JobDescription = {
       ],
     },
     {
-      id: 20,
+      id: 21,
       jobTitle: 'AWS Architect',
       jobDescription:
         'This Technical Architect will join a modernization effort from Monolithic architecture to Cloud based systems. This Architect will be providing technical leadership across multiple teams within our client’s organization to help establish standards, tools and help other teams gain perspective. They will be collaborating with key stakeholders to outline the design, implementation and adaption of several cloud-based solutions and technologies. This person needs to be comfortable evaluating API Platforms, Event-Based Architectures, Serverless Technologies, and Observability Platforms.',
@@ -675,7 +707,7 @@ export const JobDescription = {
       ],
     },
     {
-      id: 21,
+      id: 22,
       jobTitle: 'AWS Engineer',
       jobDescription:
         'Virufy is on the lookout for an AWS Engineer willing to contribute on a volunteer basis. This role offers the chance to immerse oneself in cloud computing and infrastructure, especially within the Amazon Web Services environment, while making a meaningful impact.',
@@ -707,7 +739,7 @@ export const JobDescription = {
       ],
     },
     {
-      id: 22,
+      id: 23,
       jobTitle: 'Cloud Engineer',
       jobDescription:
         'As Virufy expands into multiple countries, we need greater organization of our data. We have more than 700,000 cough samples from disparate sources—and growing. As such, the primary responsibility of this role is to build data pipelines from these external sources to a data warehouse. We’re on AWS, but pivoting towards open-source tooling.',
@@ -744,15 +776,17 @@ export const JobDescription = {
         'Reach out to frederick.cosper@virufy.org and we will get back to you promptly.',
       ],
     },
-    {
-      id: 23,
-      jobTitle: 'Unix Administrator',
-      jobDescription: '',
-      responsibilities: [''],
-      minimumQualifications: [''],
-      desiredSkills: [''],
-      hours: [''],
-      questions: [''],
-    },
+    //Steven Hunt will give the details for this opening next week
+
+    // {
+    //   id: 24,
+    //   jobTitle: 'Unix Administrator',
+    //   jobDescription: '',
+    //   responsibilities: [''],
+    //   minimumQualifications: [''],
+    //   desiredSkills: [''],
+    //   hours: [''],
+    //   questions: [''],
+    // },
   ],
 }

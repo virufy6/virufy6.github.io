@@ -65,7 +65,13 @@ const IdJob = () => {
             }}
           >
             {parts[0]}
-            <a href={`mailto:${emailMatch[0]}`} style={{ color: '#3074DC' }}>
+            <a
+              href={`mailto:${emailMatch[0]}`}
+              style={{
+                color: '#00000',
+                textDecoration: 'underline',
+              }}
+            >
               {emailMatch[0]}
             </a>
             {parts[1]}
