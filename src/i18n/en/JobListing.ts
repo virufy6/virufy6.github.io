@@ -70,6 +70,10 @@ export const JobListing = {
           title: 'HR Administrative Assistant',
           id: 13,
         },
+        {
+          title: 'Technical Recruiter',
+          id: 14,
+        },
       ],
     },
     {
@@ -77,11 +81,11 @@ export const JobListing = {
       positions: [
         {
           title: 'Corporate Attorney (IT Oriented)',
-          id: 14,
+          id: 15,
         },
         {
           title: 'Paralegal',
-          id: 15,
+          id: 16,
         },
       ],
     },
@@ -90,39 +94,39 @@ export const JobListing = {
       positions: [
         {
           title: 'Business Analyst',
-          id: 16,
-        },
-        {
-          title: 'Python Programmer',
           id: 17,
         },
         {
-          title: 'Technical Writer',
+          title: 'Python Programmer',
           id: 18,
         },
         {
-          title: 'Quality Assurance Engineer',
+          title: 'Technical Writer',
           id: 19,
         },
         {
-          title: 'AWS Developer',
+          title: 'Quality Assurance Engineer',
           id: 20,
         },
         {
-          title: 'AWS Architect',
+          title: 'AWS Developer',
           id: 21,
         },
         {
-          title: 'AWS Engineer',
+          title: 'AWS Architect',
           id: 22,
         },
         {
-          title: 'Cloud Engineer',
+          title: 'AWS Engineer',
           id: 23,
         },
         {
-          title: 'Unix Administrator',
+          title: 'Cloud Engineer',
           id: 24,
+        },
+        {
+          title: 'Unix Administrator',
+          id: 25,
         },
       ],
     },
