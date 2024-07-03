@@ -417,21 +417,20 @@ export const JobDescription = {
     {
       id: 14,
       jobTitle: 'Technical Recruiter',
-      jobDescription:
-        '',
+      jobDescription: 'Communicate with HR and Virufy leadership for the available positions and their requirements.',
       responsibilities: [
         'Communicate with HR and Virufy leadership for the available positions and their requirements',
         'Source and screen technical candidates (ML, Audio Processing, Signal Processing, Data Science)',
         'Create job postings and post them on relevant channels',
         'Coordinate interview times with decision makers',
         'Work with outreach team to update social media',
-        'Crowdsource potential candidates', 
+        'Crowdsource potential candidates',
       ],
       minimumQualifications: [
         'Minimum 1 year of experience as a sourcer, recruitment agent, or related role',
         'Understanding of Machine Learning, Artificial Intelligence, Data Science',
         'Outstanding communication skills',
-        'Excellent negotiation skills',        
+        'Excellent negotiation skills',
       ],
       desiredSkills: [
         'Highly responsive, flexible with hours.',
@@ -445,7 +444,7 @@ export const JobDescription = {
     {
       id: 15,
       jobTitle: 'Corporate Attorney (IT Oriented)',
-      jobDescription: '',
+      jobDescription: 'Seeking an individual to contribute on a part-time volunteer basis and collaborate closely with Virufy management and globally-dispersed legal teams to help manage data privacy concerns for their local jurisdictions.',
       responsibilities: [
         'Review and adapt to local regulation legal documents drafted by senior legal counsel such as NDAs, contracts, partnership agreements, etc.',
         'Advise management and infosec teams on relevant data security policies for local regulations.',
