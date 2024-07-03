@@ -143,7 +143,7 @@ const IdJob = () => {
                       key={index}
                       style={{
                         listStylePosition: 'inside',
-                        paddingLeft: '1.2em',
+                        paddingLeft: '1.8em',
                         textIndent: '-1.2em',
                       }}
                     >
