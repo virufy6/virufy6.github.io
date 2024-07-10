@@ -22,7 +22,7 @@ const Covid19: React.FC = () => {
           <div className="relative flex flex-col items-center justify-center pt-32 pb-12 md:pt-72 md:pb-48">
             {/* Sizing & Spacing Container */}
             <div className="max-w-xl px-8 text-center font-medium text-white md:max-w-4xl">
-              <h1 className="text-2xl font-large leading-loose md:text-3xl md:leading-normal">
+              <h1 className="md:text-4xl text-2xl font-large leading-loose md:text-3xl md:leading-normal">
                 COVID-19
               </h1>
             </div>
