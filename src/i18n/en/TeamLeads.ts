@@ -17,7 +17,7 @@ import {
   Sebastian,
   Shreya,
   Veronica,
-  Yulie,
+  Yulie
 } from '~/assets/static/images/oneYoungWorld'
 
 export const TeamLeads = {

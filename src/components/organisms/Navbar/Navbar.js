@@ -279,7 +279,7 @@ useEffect(() => {
                                 <div>
                                     <Link className={`${navbar ? 'font-bold' : ''} peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left
                                     relative before:w-full before:h-0.5 before:origin-right before:transition-transform
-                                    before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0`} href="">
+                                    before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0`} href="/Covid19">
                                         {coughCheckApp?.section}
                                     </Link>
 
