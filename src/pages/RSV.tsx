@@ -5,21 +5,21 @@ import bodyBackgroundImage from 'src/assets/static/images/diseases/BodyBackgroun
 
 const RSV: React.FC = () => {
   return (
-    <div className="relative -top-24">
+    <div className="relative">
       {/* Header/Hero Section */}
-      <section>
+      <section className="-mt-24">
         <div className="relative bg-gradient-to-b from-black to-[#162b4c]">
           <Image
             className="absolute h-full w-full object-cover opacity-30"
             src={RSVImage}
             alt="RSV"
             width={1512}
-            height={906}
+            height={798}
             priority
           />
 
           {/* Text Container */}
-          <div className="relative flex flex-col items-center justify-center pt-32 pb-12 md:pt-72 md:pb-48">
+          <div className="relative flex flex-col items-center justify-center h-[300px] md:h-[650px]">
             {/* Sizing & Spacing Container */}
             <div className="max-w-xl px-8 text-center font-medium text-white md:max-w-4xl">
               <h1 className="md:text-4xl text-2xl font-large leading-loose md:text-3xl md:leading-normal">
@@ -37,7 +37,7 @@ const RSV: React.FC = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
-          minHeight: '2957px', // Set the minimum height to match the image dimensions
+          minHeight: '2770px', // Set the minimum height to match the image dimensions
         }}
         className="relative min-h-screen"
       >
@@ -48,7 +48,7 @@ const RSV: React.FC = () => {
         <div className="relative z-10">
           <DiseasesNavbar />
           <div className="text-left px-10 text-white mt-8">
-            <p className="text-4xl">Coming Soon...</p>
+            <p className="md:text-2xl text-xl">Information coming soon.</p>
           </div>
         </div>
       </section>
