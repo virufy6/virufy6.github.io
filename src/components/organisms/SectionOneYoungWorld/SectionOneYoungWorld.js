@@ -1,4 +1,5 @@
 import TitleText from '~/components/molecules/TitleText/TitleText'
+import Video from '../../atoms/videoAtom/Video'
 
 export default function SectionTellYourStoryGetInvolved({ TextProps }) {
   return (
@@ -42,34 +43,25 @@ export default function SectionTellYourStoryGetInvolved({ TextProps }) {
           />
         </div>
         <div className="align-center mt-[40px] flex justify-center md:hidden">
-          <iframe
-            width="370"
-            height="208"
-            src="https://www.youtube.com/embed/hvJgwPNYnZo?cc_load_policy=1"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+          <Video
+            width="370px"
+            height="208px"
+            url="https://www.youtube.com/watch?v=hvJgwPNYnZo"
+          />
         </div>
         <div className="align-center mt-[40px] hidden justify-center md:flex xl:hidden">
-          <iframe
-            width="800"
-            height="450"
-            src="https://www.youtube.com/embed/hvJgwPNYnZo?cc_load_policy=1"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+          <Video
+            width="800px"
+            height="450px"
+            url="https://www.youtube.com/watch?v=hvJgwPNYnZo"
+          />
         </div>
         <div className="align-center mt-[40px] hidden justify-center xl:flex">
-          <iframe
-            width="1280"
-            height="720"
-            src="https://www.youtube.com/embed/hvJgwPNYnZo?cc_load_policy=1"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+          <Video
+            width="1280px"
+            height="720px"
+            url="https://www.youtube.com/watch?v=hvJgwPNYnZo"
+          />
         </div>
       </div>
     </div>
