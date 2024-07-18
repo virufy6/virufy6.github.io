@@ -1,65 +1,89 @@
-import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal";
-
+import ImageAtomLocal from '~/components/atoms/imageAtom/ImageAtomLocal'
 import { useI18n } from '~/i18n'
 
-export default function OurSupportersSection({
-  TextProps
-}) {
+const companyNames = [
+  'Pillsbury',
+  'AWS',
+  'FENWICK',
+  'Littler',
+  'Barda',
+  'Xoor',
+  'Sherlock Communications',
+  'idime',
+  'H4R',
+  'SPI',
+  'Standford Medicine',
+  'Service Bots',
+  'DevLights',
+  'Parrolabs',
+  'Stanford Healthcare Innovation Lab',
+  'Candido Costa & Cancio',
+  'Kurunji Venkatramana Gowda Law College',
+  'Compensar',
+  'DRIVe',
+  'O CJ Partners',
+  'nueva eps',
+  'nuvu',
+  'Locked Jar',
+  'CLEVELAND IBN SINA CLINIC',
+  'One Yound World',
+  'Response Innovation Lab',
+  'Arkangel Ai',
+]
 
-    const {
-        OurSupporters: {
-          titleImage,
-          sectionSupporters,
-          sectionOneYoungWorld,
-          sectionVolunterStories,
-          sectionTeamLeads,
-        },
-      } = useI18n()
+export default function OurSupportersSection({ TextProps }) {
+  const {
+    OurSupporters: {
+      titleImage,
+      sectionSupporters,
+      sectionOneYoungWorld,
+      sectionVolunterStories,
+      sectionTeamLeads,
+    },
+  } = useI18n()
 
   return (
     <>
-      <div className="max-w-[1440px] w-[100vw] md:hidden mt-[80px]" >
-        
+      <div className="mt-[80px] w-[100vw] max-w-[1440px] md:hidden">
         {/* Supporters mobile view */}
-
-        <div className="w-full flex justify-center flex-wrap">
-          {Array.from({ length: 27 }, (_, i) => (
-            <div className="flex mx-1 justify-center basis-1/4" key={i}>
+        <div className="flex w-full flex-wrap justify-center">
+          {companyNames.map((name, i) => (
+            <div className="mx-1 flex basis-1/4 justify-center" key={i}>
               <ImageAtomLocal
                 imagesize=""
-                alt=""
+                alt={name}
                 border=""
-                src={require(`~/assets/static/images/ourSupporters/icon-supports/supporter-${i + 1}.png`)}
+                src={require(`~/assets/static/images/ourSupporters/icon-supports/supporter-${
+                  i + 1
+                }.png`)}
                 ImageStyleProps=""
               />
             </div>
           ))}
         </div>
+      </div>
 
-      </div> 
-
-
-    {/* Desktop view */}
-      <div className="max-w-[1440px] w-full hidden md:block" >
+      {/* Desktop view */}
+      <div className="hidden w-full max-w-[1440px] md:block">
         <div className="mb-40"></div>
 
         {/* Supporters */}
-
-        <div className="w-full flex justify-center flex-wrap">
-          {Array.from({ length: 27 }, (_, i) => (
-            <div className="flex mx-0 justify-center basis-1/4" key={i} >
+        <div className="flex w-full flex-wrap justify-center">
+          {companyNames.map((name, i) => (
+            <div className="mx-0 flex basis-1/4 justify-center" key={i}>
               <ImageAtomLocal
                 imagesize=""
-                alt=""
+                alt={name}
                 border=""
-                src={require(`~/assets/static/images/ourSupporters/icon-supports/supporter-${i + 1}.png`)}
+                src={require(`~/assets/static/images/ourSupporters/icon-supports/supporter-${
+                  i + 1
+                }.png`)}
                 ImageStyleProps=""
               />
             </div>
           ))}
         </div>
-        
-      </div> 
+      </div>
     </>
-  );
+  )
 }
