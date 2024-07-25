@@ -117,6 +117,55 @@ export const FAQ = {
         answer:
           'When the pandemic hit, Virufy’s founder, Amil, knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs. He hypothesized that breathing and cough sounds could be analyzed with machine learning to detect COVID patterns. Wanting to make a positive impact, he orchestrated a clinical study with 362 patients in an esteemed university hospital. The original team of Virufy, beginning with Stanford graduate AI students, expanded to volunteers from universities around the world.As a One Young World Japan ambassador who has travelled to over a dozen countries, Amil understands the global perspective and how a smartphone-based solution can be used by people all over the world.',
       },
+      {
+        question: 'What will your organization do?',
+        answer:'Virufy is building the world’s largest dataset of COVID cough sounds by generating a movement where millions of people collectively contribute their data to fight COVID and other upper respiratory diseases. As a 501(c)(3) non-profit startup free of institutional red tape and with a diverse team from more than 20 countries, we are well positioned to make this happen. This app will iniltially be released in low-income countries and will allow for mass-scale, anonymous testing to slow the virus spread. We hope to unite people across borders and create a new paradigm for global collaboration. We want to create a future where community spread of infectious diseases is greatly reduced, as the world population is empowered by smartphone app to detect illnesses early on.',
+      },
+      {
+        question: 'How is Virufy different from other groups working on similar projects?',
+        answer:'Because Virufy is a 501(c)(3) non-profit organization, we are able to recruit highly talented professionals as volunteers. Our team is global, spanning five continents, and our organization thus has global empathy built in. We are not concerned with making profit, so are able to work in developing countries. Our dense university alumni and professional networks grant us access to top echelon contacts in every country of the world. Mentorship is built into our organization, as dozens of young professionals in our team are empowered by sage advice from senior industry experts leads to rapid, creative activity focused in the right direction.',
+      },
+      {
+        question: '',
+        answer:''
+      },
+      {
+        question: '',
+        answer:''
+      },
+      {
+        question: '',
+        answer:''
+      },
+      {
+        question: '',
+        answer:''
+      },
+
     ],
+    'About AI':[
+      {
+        question: '',
+        answer:''
+      },
+    ],
+    'Finances':[
+      {
+        question: '',
+        answer:''
+      },
+    ],
+    'Privacy':[
+      {
+        question: '',
+        answer:''
+      },
+    ],
+    'Other':[
+      {
+        question: '',
+        answer:''
+      },
+    ]
   },
 }
