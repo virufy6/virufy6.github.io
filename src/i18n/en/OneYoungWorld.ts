@@ -27,8 +27,8 @@ export const OneYoungWorld = {
       title: 'One Young World',
       subTitle: 'Virufy & One Young World',
       texts: [
-        'Our world needs great leadership. The new generation is one of the most informed, educated and well connected generations in world history. One Young World identifies, promotes and connects the most impactful young leaders across the globe to create a better world: a world with more responsible and effective leadership.',
-        'Virufy has been featured on various OYW platforms, including in the Americas and Japan, ambassadors in action , and ambassadors on the frontline for COVID-19 response . We are also collaborating with OYW coordinating ambassadors across various regions for outreach efforts.',
+        'Our world needs great leadership. The next generation is the most informed, educated and well connected generation in world history. One Young World identifies, promotes and connects the most impactful young leaders across the globe to create a better world: a world with more responsible and effective leadership.',
+        'Virufy has been featured on various OYW platforms, including ambassadors in action , and ambassadors on the frontline for COVID-19 response . We are also collaborating with OYW coordinating ambassadors across various regions for outreach efforts.',
       ],
       videoUrl: 'https://www.youtube.com/embed/hvJgwPNYnZo?si=k_ujoF1pBeYFg65C',
       videoTitle: "Virufy's Vision and Call to Action",
@@ -38,33 +38,33 @@ export const OneYoungWorld = {
       cards: [
         {
           title: 'Ambassador driven',
-          text: 'Our organization structure matches One Young World with youth ambassadors leading operations in each country, with regional coordinating ambassadors.',
+          text: 'Our organization structure matches One Young World with youth ambassadors coordinating operations in each region.',
           image: AmbassadorIcon,
           altText: '',
         },
         {
           title: 'Youth led',
-          text: 'Our growing team is led by youth from over a dozen countries and are advised by global leaders.',
+          text: 'Our growing team is led by young professionals from over a dozen countries with close advisory from global industry leaders.',
           image: YouthIcon,
           altText: '',
         },
         {
           title: 'Focused on global impact',
-          text: 'Collect data and provide equitable solutions for people in developing countries across the world.',
+          text: 'Our aim from day one has been to provide equitable solutions for all people in all countries across the world.',
           image: GlobeIcon,
           altText: '',
         },
         {
           title: 'Diverse representation',
-          text: 'Our team has representation from over 25 universities and 15 countries and includes more than 10 One Young World ambassadors.',
+          text: 'Our team has representation from over 50 universities and 25 countries and has received support from dozens of One Young World ambassadors.',
           image: DiverseIcon,
           altText: '',
         },
       ],
     },
     volunteerStories: {
-      title: 'Volunteer Stories',
-      text: 'Our team is led by students dedicated to social good from reputable institutions like Stanford, Princeton, and One Young World. We have strong trust in members of the One Young World community and warmly welcome any ambassadors interested to pitch in.',
+      title: 'Volunteer Testimonials',
+      text: 'Several ambassadors have volunteered at Virufy and have given testimonials. We have strong trust in members of the One Young World community and warmly welcome any ambassadors interested to contribute.',
       testimonials: [
         {
           name: 'Sebastian Pedraza',
