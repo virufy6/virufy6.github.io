@@ -6,10 +6,8 @@ import { useI18n } from "~/i18n";
 import Card1 from "~/assets/static/images/ourPeople/card1.jpg"
 import Card2 from "~/assets/static/images/ourPeople/card2.jpg"
 import Card3 from "~/assets/static/images/ourPeople/card3.jpg"
-import Card4 from "~/assets/static/images/ourPeople/card4.jpg"
 import Card5 from "~/assets/static/images/ourPeople/card5.jpg"
 import Card6 from "~/assets/static/images/ourPeople/card6.jpg"
-import Card7 from "~/assets/static/images/ourPeople/card7.jpg"
 import Card8 from "~/assets/static/images/ourPeople/card8.jpg"
 import Card9 from "~/assets/static/images/ourPeople/card9.jpg"
 import Card10 from "~/assets/static/images/ourPeople/card10.jpg"
@@ -55,12 +53,7 @@ export default function OurPeople1() {
       subtitle: "Executive Marketing Advisor",
       text: "Former CMO - Adobe Board Member - CommonSpirit Health",
     },
-    {
-      route: Card4,
-      name: "Anaïs Rameau, M.D.",
-      subtitle: "Clinical Advisor",
-      text: "Assistant Professor of ENT - Cornell University Doctor of Medicine - McGill University",
-    },
+
     {
       route: Card5,
       name: "Madhav Datt",
@@ -73,12 +66,7 @@ export default function OurPeople1() {
       subtitle: "Executive Legal Advisor",
       text: "Partner, IP/IT & Head Data Privacy Europe Pillsbury Winthrop Shaw Pittman LLP",
     },
-    {
-      route: Card7,
-      name: "Richard Swartzbaugh",
-      subtitle: "Executive Advisor",
-      text: "Risk Management - Curaesoft J.D. - University of Iowa",
-    },
+  
     {
       route: Card8,
       name: "Ronan Dunlop",
