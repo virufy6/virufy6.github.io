@@ -42,8 +42,8 @@ export const Publications = {
     },
   ],
   coughSection: {
-    title: "Let's help the world and save lives by recording your cough",
+    title: "Interested to collaborate on our research",
     texts: [],
-    linkText: 'Share Your Cough',
+    linkText: 'Join our Team',
   },
 }
