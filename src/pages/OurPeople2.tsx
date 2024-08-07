@@ -257,7 +257,7 @@ export default function OurPeople2() {
         <div className="ml-[8.5vw]">
           <ImageAtomLocal
             imagesize={"px375x225"}
-            alt="Amil"
+            alt="Amil with nursing staff supporting Virufy’s clinical studies in Colombia, South America"
             src={Amil2}
             border={""}
             ImageStyleProps={""}
@@ -291,7 +291,7 @@ export default function OurPeople2() {
         </div>
         <ImageAtomLocal
             imagesize={"px375x225"}
-            alt="Amil"
+            alt="Amil with Japanese students and staff in his ZenIT programming school"
             src={Amil3}
             border={""}
             ImageStyleProps={""}
@@ -305,7 +305,7 @@ export default function OurPeople2() {
         <div className="ml-[8.5vw]">
           <ImageAtomLocal
             imagesize={"px375x300"}
-            alt="Amil"
+            alt="Amil’s encounter with former Prime Minister and current NATO president Mark Rutte"
             src={Amil4}
             border={""}
             ImageStyleProps={""}
