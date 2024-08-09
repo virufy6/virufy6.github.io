@@ -42,7 +42,7 @@ export const Publications = {
     },
   ],
   coughSection: {
-    title: "Interested to collaborate on our research",
+    title: "Interested to collaborate on our research?",
     texts: [],
     linkText: 'Join our Team',
   },
