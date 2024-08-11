@@ -1,20 +1,27 @@
 import Image from 'next/image'
-import { useState } from 'react'
+// import { useState } from 'react'
 import PublicationCard from '~/components/molecules/Card/PublicationCard'
-import ShareYourCoughModal from '~/components/organisms/Modals/ShareYourCoughModal'
+// import ShareYourCoughModal from '~/components/organisms/Modals/ShareYourCoughModal'
 import { useI18n } from '~/i18n'
 import {
   HexagonDottedBackground,
   PhoneHeader,
 } from '../assets/static/images/publications/index'
+import { useRouter } from 'next/router'
 
 export default function PublicationsPage() {
   const {
     Publications: { publicationsSection, publicationsCards, coughSection },
   } = useI18n()
 
-  const [isShareYourCoughModalOpen, setIsShareYourCoughModalOpen] =
-    useState(false)
+  // const [isShareYourCoughModalOpen, setIsShareYourCoughModalOpen] =
+  //   useState(false)
+
+    const router = useRouter()
+    
+    const handleRedirect = () => {
+      void router.push('/job-listing');
+    };
 
   return (
     <div className="relative -top-24">
@@ -77,7 +84,8 @@ export default function PublicationsPage() {
 
             <button
               className="rounded-full bg-gradient-to-b from-[#38b76b] to-[#3578de] p-6 text-xl font-medium sm:px-8 sm:text-2xl md:py-4 md:px-8 md:text-lg"
-              onClick={() => setIsShareYourCoughModalOpen(true)}
+              onClick={handleRedirect}
+            
             >
               {coughSection.linkText}
             </button>
@@ -86,10 +94,10 @@ export default function PublicationsPage() {
       </div>
 
       {/* Share Your Cough Modal */}
-      <ShareYourCoughModal
+      {/* <ShareYourCoughModal
         isOpen={isShareYourCoughModalOpen}
         handleClose={() => setIsShareYourCoughModalOpen(false)}
-      />
+      /> */}
     </div>
   )
 }
