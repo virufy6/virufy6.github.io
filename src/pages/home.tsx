@@ -17,7 +17,7 @@ export default function Prueba() {
           src={ImageSection2}
           altImg="A person holding phone in hand"
           text="Welcome to Virufy"
-          text2="Your Personal Health Companion"
+          text2="Your Digital Health Companion"
           mainText="Empower yourself with the latest in health technology."
           subText="Introducing CoughCheck, the cutting-edge app that utilizes advanced algorithms to analyze your cough and provide insights into potential infection symptoms."
           buttonText="View App Here"

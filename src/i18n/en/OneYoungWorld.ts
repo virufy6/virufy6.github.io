@@ -28,7 +28,7 @@ export const OneYoungWorld = {
       subTitle: 'Virufy & One Young World',
       texts: [
         'Our world needs great leadership. The next generation is the most informed, educated and well connected generation in world history. One Young World identifies, promotes and connects the most impactful young leaders across the globe to create a better world: a world with more responsible and effective leadership.',
-        'Virufy has been featured on various OYW platforms, including ambassadors in action , and ambassadors on the frontline for COVID-19 response . We are also collaborating with OYW coordinating ambassadors across various regions for outreach efforts.',
+        'Virufy has been featured on various OYW platforms, including ambassadors in action, delegate conferences, and ambassadors on the frontline for COVID-19 response. We are also collaborating with OYW coordinating ambassadors across various regions for outreach efforts.',
       ],
       videoUrl: 'https://www.youtube.com/embed/hvJgwPNYnZo?si=k_ujoF1pBeYFg65C',
       videoTitle: "Virufy's Vision and Call to Action",
