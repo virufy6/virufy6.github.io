@@ -135,7 +135,7 @@ export const JobListing = {
   titleImage:
     'Virufy is entirely run by volunteers and pro bono partner companies.',
   title: 'Our Mission',
-  text: 'Virufy, a nonprofit research consortium of researchers, innovators, and scientists, has united volunteers from 25+ countries to develop a smartphone app for the detection of COVID-19. Initially developed as a Stanford University COVID-19 Response Innovation Lab project, Virufy’s artificial intelligence (AI) COVID-19 diagnostic solution fights the pandemic through widespread, accessible, and free testing.',
+  text: "Join Virufy and be part of a groundbreaking global effort to combat COVID-19! As an innovative nonprofit consortium, we’ve brought together experts from over 25 countries to develop a state-of-the-art smartphone app for detecting the virus. Originally a Stanford University COVID-19 Response Innovation Lab project, our AI-driven diagnostic solution is setting new standards for accessible, free testing. By volunteering with Virufy, you'll gain hands-on experience with cutting-edge AI tools, broaden your professional network, and contribute significantly to a vital cause. Take this opportunity to be at the forefront of innovation and help shape the future of pandemic response!",
   modal: {
     text: 'Do you understand these are all unpaid, volunteer positions?',
     yes: 'Yes',

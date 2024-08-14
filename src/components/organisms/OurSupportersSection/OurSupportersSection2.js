@@ -12,7 +12,6 @@ const companyNames = [
   'idime',
   'H4R',
   'SPI',
-  'Standford Medicine',
   'Service Bots',
   'DevLights',
   'Parrolabs',
