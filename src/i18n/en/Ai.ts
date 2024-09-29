@@ -24,7 +24,7 @@ export const Ai = {
       },
       {
         title: '02',
-        text: 'It scrutinizes various elements of the cough, such as duration, frequency, and intensity. Leveraging a comprehensive database, the Al meticulously compares recorded cough patterns against known indicators of respiratory diseases, allowing for the early detection of potential health issues.',
+        text: 'The algorithm scrutinizes various elements of the cough, such as duration, frequency, and intensity. Leveraging a comprehensive database, the Al meticulously compares recorded cough patterns against known indicators of respiratory diseases, allowing for the early detection of potential health issues.',
         style: 'text-[2.5rem] sm:text-6xl',
       },
     ],
