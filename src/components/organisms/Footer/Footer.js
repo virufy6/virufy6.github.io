@@ -910,8 +910,11 @@ export default function Footer() {
             </div>
           </div>
           <div className="align-center mt-10 hidden w-full flex-col gap-7 text-white lg:flex">
-            <div className="align-center m-auto max-w-4xl text-center font-semibold">
-              <Text Text="Nonprofit Status" Style="small" TextClassProps="" />
+            <div className="align-center m-auto max-w-4xl text-center font-semibold flex flex-col items-center justify-center">
+              <Text Text="Nonprofit Status" Style="small" TextClassProps="mb-4" />
+                <a href="The Covid Detection Foundation - GuideStar Profile" target="_blank" className="block">
+                  <img src="https://widgets.guidestar.org/TransparencySeal/10153729" alt="GuideStar Profile" className="mx-auto" />
+                </a>
             </div>
             <div className="align-center m-auto max-w-4xl text-center">
               <Text
